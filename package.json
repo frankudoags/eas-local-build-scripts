@@ -27,7 +27,7 @@
     "build:release:ios": "eas build --local --profile release --platform ios --output ./ios-release.ipa --non-interactive && eas submit --profile release --platform ios --path ./ios-release.ipa --non-interactive",
     "build:prod:ios": "eas build --local --profile production --platform ios --output ./ios-prod.ipa --non-interactive && eas submit --profile production --platform ios --path ./ios-prod.ipa --non-interactive",
     "icons": "svgr assets/svg --native --out-dir lib/components/icons --typescript --icon --ignore-existing",
-    "adb-log": "adb logcat *:S ReactNative:V ReactNativeJS:V grep \"com.oysterai.Oyster.preview\" > logs.txt",
+    "adb-log": "adb logcat *:S ReactNative:V ReactNativeJS:V grep \"com.frankudoags.app\" > logs.txt",
     "deploy:preview": "./scripts/deploy-preview.sh",
     "deploy:preview:ios": "./scripts/deploy-preview.sh --platform ios",
     "deploy:preview:android": "./scripts/deploy-preview.sh --platform android",
